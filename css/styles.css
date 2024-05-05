@@ -1,0 +1,254 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+body{
+  background: rgb(238,238,240);
+  background: linear-gradient(0deg, rgba(238,238,240,1) 47%, rgba(255,255,255,1) 100%, rgba(255,255,255,1) 100%);
+}
+
+nav{
+  background-color: #c9f1fd;
+}
+
+.logo{
+  max-width: 100%;
+  width: 100px;
+  height: 100px;
+  margin-left: 50px;
+}
+
+nav ul{
+  background-color: #cbe8ba;
+  width: fit-content;
+  padding: 5px 20px 5px 20px !important;
+  border: 2px solid white;
+  
+}
+
+#hamburger{
+  background-color: #cbe8ba;
+  border: 2px solid white;
+}
+
+#navPetShop{
+  border-radius: 30px;
+}
+
+.nav-item{
+  margin: 0 5px 0 5px; 
+}
+
+#search{
+  background-color: #cbe8ba;
+  width: fit-content;
+  border: 2px solid white;
+}
+
+.carouselExample{
+  height: 100vh;
+}
+
+.bg-img-1{
+  background-image: url('../media/1.jpg');
+}
+
+.bg-img-2{
+  background-image: url('../media/2.jpg');
+}
+
+.bg-img-3{
+  background-image: url('../media/3.jpg');
+}
+
+.carousel-image{ 
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 600px;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+
+.banner{
+  background-color: #c9f1fd;
+  height: 100px;
+  align-content: center;
+}
+
+.animal{
+  background-color: #cbe8ba;
+  border: 2px solid white;
+  padding: 0 1em; 
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.card-img-top{
+  height: 300px;
+  width: 392px;
+  margin: 0 auto;
+
+}
+
+#img-vet{
+  max-width: 600px;
+  max-height: 500px;
+}
+
+#vet-desc{
+  margin-top: 30px;
+}
+
+#greenBtn{
+  background-color: #cbe8ba;
+  width: fit-content;
+  border: 2px solid white;
+}
+
+.image{
+  width: 100px;
+  height: 100px;
+}
+
+
+
+.ProductsContainer {
+  display: grid; 
+  grid-template-columns: 2fr 2fr; 
+  grid-template-rows: 1fr 1fr 1fr; 
+  grid-template-areas: 
+    "Special productsRow1 productsRow1 productsRow1"
+    "Special productsRow2 productsRow2 productsRow2"
+    "Special productsRow3 productsRow3 productsRow3"; 
+  margin: 25px auto;
+  align-content: center;
+  justify-content: center;
+  width: 80%;
+  height: 650px;
+}
+
+.specialProduct img{
+  width: 500px;
+  height: 500px;
+}
+
+.special{
+  border: none;
+  background: none;
+}
+
+.flavor{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.otherProducts{
+  display: flex;
+}
+
+.otherProducts img{
+  width: 200px;
+  height: 200px;
+}
+
+
+.Special { 
+  grid-area: Special; 
+}
+
+.productsRow1 { 
+  grid-area: productsRow1; 
+}
+
+.productsRow2 { 
+  grid-area: productsRow2; 
+}
+
+.productsRow3 { 
+  grid-area: productsRow3; 
+}
+
+.card-header{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:space-around;
+}
+
+.card-header h5{
+  height: fit-content;
+  margin: 0 auto; 
+}
+
+.promo-img{
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
+
+.promo{
+  margin:20px;
+}
+
+.promos .card{
+  width: 18rem;
+}
+
+
+footer{
+  background-color: #c9f1fd;
+}
+
+footer .container{
+  height: 7.5rem;
+  margin-top: 30px;
+  padding-top:3.5rem;
+}
+
+@media (max-width: 1380px) {
+  .ProductsContainer {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+  } 
+}
+
+@media (max-width: 998px) {
+  .banner{
+    height: fit-content;
+    padding: 20px auto;
+  }
+  
+  .promos{
+    flex-direction: column;
+  }
+
+  .promos .card{
+    width: 30rem;
+    margin: 20px auto;
+  }
+}
+
+@media(max-width:720px) {
+
+  .otherProducts{
+    flex-direction: column;
+  }
+
+  .otherProducts img{
+    width: 15rem;
+    height: 15rem;
+  }
+
+  footer .container{
+    height: fit-content;
+    margin-top: 30px;
+    padding-top:3.5rem;
+  }
+}
